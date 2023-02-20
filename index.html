@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Memory game</title>
+  </head>
+
+  <body>
+    <section class="game-intro">
+      <h1 class="title">EE4216 Assignment 1 - JavaScript Card Game</h1>
+      <p class="instructions">
+        Instructions: <br> The game starts with all the cards face down and player have to turn over three cards each round. <br>
+        If the three cards have no the same picture, then they turn the cards face down again. <br>
+        Each round you will have 1.5 minutes to finish the matching.
+        <p style="color:red">You will score 15 points after all card is matched and lose 1 point each wrong matching.</p> 
+        The number of cards can be set to any multiple of 3.
+      </p>
+      <div class="score-container">
+        <p class="score-label">Score:</p>
+        <p class="score-value">0</p>
+      </div>
+      <div class="time-container">
+        <p class="time-label">Time:</p>
+        <p class="time-value">00:00</p>
+      </div>
+      <div class="input-container">
+        <p class="input-label">Number of cards:</p>
+        <input type="text" class="input-value" />
+      </div>
+    </section>
+
+    <section class="memory-game">
+      <div class="memory-card" data-image="A">
+        <img class="front-side" src="./img/ace.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="A">
+        <img class="front-side" src="./img/ace.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="A">
+        <img class="front-side" src="./img/ace.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="2">
+        <img class="front-side" src="./img/2.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="2">
+        <img class="front-side" src="./img/2.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="2">
+        <img class="front-side" src="./img/2.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="3">
+        <img class="front-side" src="./img/3.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="3">
+        <img class="front-side" src="./img/3.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="3">
+        <img class="front-side" src="./img/3.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="4">
+        <img class="front-side" src="./img/4.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="4">
+        <img class="front-side" src="./img/4.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="4">
+        <img class="front-side" src="./img/4.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="5">
+        <img class="front-side" src="./img/5.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="5">
+        <img class="front-side" src="./img/5.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+      <div class="memory-card" data-image="5">
+        <img class="front-side" src="./img/5.svg" />
+        <img class="back-side" src="./img/back.svg" alt="JSBadge" />
+      </div>
+    </section>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
